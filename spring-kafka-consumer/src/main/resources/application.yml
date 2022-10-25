@@ -5,5 +5,5 @@ spring:
         spring.json.trusted.packages: "com.marcelocastro.kafka.producer.domain.Event"
 
 kafka-consumer:
-  server-url: "localhost:9092"
-  topic-name: kafka-poc
+  server-url: localhost:9092
+  topic-name: special-topic

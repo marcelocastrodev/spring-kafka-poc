@@ -18,6 +18,6 @@ public class ProducerService {
 
   public void publishEvent(Event event) {
     log.info("Publishing event {}", event);
-    kafkaTemplate.send(kafkaProducerProperties.getTopicName(), UUID.randomUUID(), event);
+    kafkaTemplate.send(kafkaProducerProperties.getTopicName(), event);
   }
 }

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class EventListener {
 
-  @KafkaListener(topics = "kafka-poc")
+  @KafkaListener(topics = "${kafka-consumer.topic-name}")
   public void consume(Event event) {
     log.info("Event consumed {}", event);
   }
